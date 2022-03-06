@@ -1,0 +1,25 @@
+<!--pages/my/my.wxml-->
+<scroll-view scroll-y class="scrollPage">
+    <view class="UCenter-bg">
+        <view class='avatar'>
+            <open-data type="userAvatarUrl"></open-data>
+        </view>
+        <open-data type="userNickName" class="text-df"></open-data>
+        <text class="text-inf">本科 经济学院 大二</text>
+        <image src="https://7363-schoolgzgsxy-2g07k3mh30f9fcde-1305126347.tcb.qcloud.la/system/wave.gif?sign=878472d579816f574989043298c06812&t=1614861678" mode="scaleToFill" class="gif-wave"></image>
+    </view>
+    <van-grid column-num="4" icon-size="32px">
+        <van-grid-item icon="/images/收藏.png" text="我的收藏" />
+        <van-grid-item icon="/images/订单.png" text="我的订单" />
+        <van-grid-item icon="/images/发布.png" text="我的发布" />
+        <van-grid-item icon="/images/消息.png" text="我的消息" />
+    </van-grid>
+    <van-cell-group>
+        <van-cell is-link title="修改密码" icon="/images/密码.png"/>
+        <van-cell is-link title="绑定手机号" icon="/images/手机.png" value="12345678910"/>
+        <van-cell is-link title="绑定教学网" icon="/images/绑定.png" value="2020111838"/>
+        <van-cell is-link title="合作联系" icon="/images/合作联系.png"/>
+        <van-cell is-link title="问题反馈" icon="/images/意见反馈.png"/>
+    </van-cell-group>
+    <van-cell is-link title="退出登录" icon="/images/退出.png"/>
+</scroll-view>

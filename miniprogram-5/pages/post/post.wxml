@@ -1,0 +1,4 @@
+请输入发布内容
+<input type="text" bindinput="shuru"/>
+<button bindtap="click1">选择图片</button>
+<button bindtap="fabu">发布</button>

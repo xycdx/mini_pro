@@ -1,0 +1,47 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/help/help",
+    "pages/trade/trade",
+    "pages/my/my",
+    "pages/login/login",
+    "pages/post/post"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "授权登录",
+    "navigationBarTextStyle":"black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "borderStyle": "white",
+    "selectedColor": "#F05555",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/index/home0.png",
+        "selectedIconPath": "images/index/home1.png"
+      },
+      {
+        "pagePath": "pages/help/help",
+        "text": "求助区",
+        "iconPath": "images/index/help0.png",
+        "selectedIconPath": "images/index/help1.png"
+      },
+      {
+        "pagePath": "pages/trade/trade",
+        "text": "交易区",
+        "iconPath": "images/index/trade0.png",
+        "selectedIconPath": "images/index/trade1.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "images/index/my0.png",
+        "selectedIconPath": "images/index/my1.png"
+      }
+    ]
+  }
+}

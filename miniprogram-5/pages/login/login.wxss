@@ -1,0 +1,39 @@
+.root{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.touxiang{
+    width: 200rpx;
+    height: 200rpx;
+    border-radius: 50%;
+    margin-top: 30rpx;
+    margin-bottom: 10rpx;
+}
+.Title_class{
+    padding-top: 40px;
+    font-size: 30px;
+    padding-bottom:15px;
+    padding-left: 15px;
+}
+.title_class{
+    font-size: 20px;
+    color:grey;
+    padding-left: 20px;
+    margin-bottom:100px;
+}
+.text1{
+    padding-left:20px;
+    font-size: 15px;
+
+}
+.text2{
+    padding-left:20px;
+    font-size: 13px;
+    color:grey;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.button_class{
+    padding:20px;
+}

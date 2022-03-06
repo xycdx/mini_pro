@@ -1,0 +1,279 @@
+<!--pages/help/help.wxml-->
+<view class="help_class">
+
+    <van-tabs active="{{ active }}" bind:change="onChange">
+        <van-tab title="求资料">
+            <van-search placeholder="请输入搜索关键词" />
+            <van-dropdown-menu active-color="#F05555">
+                <van-dropdown-item value="{{ value1 }}" options="{{ option1 }}" />
+                <van-dropdown-item value="{{ value2 }}" options="{{ option2 }}" />
+            </van-dropdown-menu>
+            <scroll-view scroll-y="true" refresher-enabled="true" class="content_class" style='height:{{scroll_height}}rpx'>
+
+                <view class="card_class">
+                    <van-card class="custom_class" price="10.00" thumb="{{ imageURL }}">
+                    <view slot="title">
+                        <van-tag type="danger">紧急</van-tag>
+                        <text class="title_class">求高等数学习题集</text>
+                    </view>
+                    <view slot="desc" class="desc_class">
+                        <text class="desc_text_class">资料描述：《高等数学习题集》上海财经大学出版社，主编：叶玉全，新书二手书皆可！</text>
+                    </view>
+                    <view slot="footer" class="footer_class">
+                        <van-button plain size="small" color="#F05555">帮助ta</van-button>
+                    </view>
+                </van-card>
+                </view>
+                <view class="card_class">
+                    <van-card class="custom_class" price="20.00" thumb="{{ imageURL }}">
+                    <view slot="title">
+                        <van-tag type="warning">尽快</van-tag>
+                        <text class="title_class">求曼昆宏观经济学</text>
+                    </view>
+                    <view slot="desc" class="desc_class">
+                        <text class="desc_text_class">资料描述：《宏观经济学》曼昆，中国人民大学出版社第十版，中级宏观经济学教材</text>
+                    </view>
+                    <view slot="footer" class="footer_class">
+                        <van-button plain size="small" color="#F05555">帮助ta</van-button>
+                    </view>
+                </van-card>
+                </view>
+                <view class="card_class">
+                    <van-card class="custom_class" price="5.00" thumb="{{ imageURL }}">
+                    <view slot="title">
+                        <van-tag type="success">不急</van-tag>
+                        <text class="title_class">求《大脑的奥秘》学霸复习笔记</text>
+                    </view>
+                    <view slot="desc" class="desc_class">
+                        <text class="desc_text_class">资料描述：有偿求《大脑的奥秘》3.7 or 4.0大神的笔记！！</text>
+                    </view>
+                    <view slot="footer" class="footer_class">
+                        <van-button plain size="small" color="#F05555">帮助ta</van-button>
+                    </view>
+                </van-card>
+                </view>
+                <view class="card_class">
+                    <van-card class="custom_class" price="10.00" thumb="{{ imageURL }}">
+                    <view slot="title">
+                        <van-tag type="danger">紧急</van-tag>
+                        <text class="title_class">求马原老师最后一节课划的重点！</text>
+                    </view>
+                    <view slot="desc" class="desc_class">
+                        <text class="desc_text_class">资料描述：有偿求各班马原老师最后一节课划的重点，急，在线等！！！</text>
+                    </view>
+                    <view slot="footer" class="footer_class">
+                        <van-button plain size="small" color="#F05555">帮助ta</van-button>
+                    </view>
+                </van-card>
+                </view>
+                <view class="card_class">
+                    <van-card class="custom_class" price="10.00" thumb="{{ imageURL }}">
+                    <view slot="title">
+                        <van-tag type="danger">紧急</van-tag>
+                        <text class="title_class">求数学分析教材pdf</text>
+                    </view>
+                    <view slot="desc" class="desc_class">
+                        <text class="desc_text_class">资料描述：《高等数学》上海财经大学出版社习题集</text>
+                    </view>
+                    <view slot="footer" class="footer_class">
+                        <van-button plain size="small" color="#F05555">帮助ta</van-button>
+                    </view>
+                </van-card>
+                </view>
+                <view class="card_class">
+                    <van-card class="custom_class" price="10.00" thumb="{{ imageURL }}">
+                    <view slot="title">
+                        <van-tag type="danger">紧急</van-tag>
+                        <text class="title_class">求高等数学习题集pdf</text>
+                    </view>
+                    <view slot="desc" class="desc_class">
+                        <text class="desc_text_class">资料描述：《高等数学》上海财经大学出版社习题集</text>
+                    </view>
+                    <view slot="footer" class="footer_class">
+                        <van-button plain size="small" color="#F05555">帮助ta</van-button>
+                    </view>
+                </van-card>
+                </view>
+                <view class="card_class">
+                    <van-card class="custom_class" price="10.00" thumb="{{ imageURL }}">
+                    <view slot="title">
+                        <van-tag type="danger">紧急</van-tag>
+                        <text class="title_class">求高等数学习题集pdf</text>
+                    </view>
+                    <view slot="desc" class="desc_class">
+                        <text class="desc_text_class">资料描述：《高等数学》上海财经大学出版社习题集</text>
+                    </view>
+                    <view slot="footer" class="footer_class">
+                        <van-button plain size="small" color="#F05555">帮助ta</van-button>
+                    </view>
+                </van-card>
+                </view>
+                <view class="card_class">
+                    <van-card class="custom_class" price="10.00" thumb="{{ imageURL }}">
+                    <view slot="title">
+                        <van-tag type="danger">紧急</van-tag>
+                        <text class="title_class">求高等数学习题集pdf</text>
+                    </view>
+                    <view slot="desc" class="desc_class">
+                        <text class="desc_text_class">资料描述：《高等数学》上海财经大学出版社习题集</text>
+                    </view>
+                    <view slot="footer" class="footer_class">
+                        <van-button plain size="small" color="#F05555">帮助ta</van-button>
+                    </view>
+                </van-card>
+                </view>
+                <view class="card_class">
+                    <van-card class="custom_class" price="10.00" thumb="{{ imageURL }}">
+                    <view slot="title">
+                        <van-tag type="danger">紧急</van-tag>
+                        <text class="title_class">求高等数学习题集pdf</text>
+                    </view>
+                    <view slot="desc" class="desc_class">
+                        <text class="desc_text_class">资料描述：《高等数学》上海财经大学出版社习题集</text>
+                    </view>
+                    <view slot="footer" class="footer_class">
+                        <van-button plain size="small" color="#F05555">帮助ta</van-button>
+                    </view>
+                </van-card>
+                </view>
+                
+            </scroll-view>
+        </van-tab>
+
+        <van-tab title="求跑腿">
+            <van-search placeholder="请输入搜索关键词" />
+            <van-dropdown-menu active-color="#F05555">
+                <van-dropdown-item value="{{ value3 }}" options="{{ option3 }}" />
+                <van-dropdown-item value="{{ value4 }}" options="{{ option4 }}" />
+            </van-dropdown-menu>
+            <scroll-view scroll-y="true" refresher-enabled="true" class="content_class" style='height:{{scroll_height}}rpx'>
+
+                <view class="card_class">
+                    <van-card class="custom_class" price="5.00" thumb="{{ imageURL }}">
+                    <view slot="title">
+                        <van-tag type="danger">紧急</van-tag>
+                        <text class="title_class">帮忙取一份快递，重酬！</text>
+                    </view>
+                    <view slot="desc" class="desc_class">
+                        <view class="desc_text_class">详细描述：寒假期间快递送到了学校菜鸟驿站，求一位朋友帮我取一下快递！</view>
+                        <van-tag plain  color="#f05555" type="primary">国定路校区</van-tag>
+
+                    </view>
+                    <view slot="footer" class="footer_class">
+                        <van-button plain size="small" color="#F05555">帮助ta</van-button>
+                    </view>
+                </van-card>
+                </view>
+                <view class="card_class">
+                    <van-card class="custom_class" price="10.00" thumb="{{ imageURL }}">
+                    <view slot="title">
+                        <van-tag type="warning">尽快</van-tag>
+                        <text class="title_class">去信息学院盖一个章！</text>
+                    </view>
+                    <view slot="desc" class="desc_class">
+                        <view class="desc_text_class">详细描述：我已经毕业，某份文件需要辅导员盖章，暂时无法返回学校，希望有人帮我打印文件并到信息学院找老师盖章</view>
+                        <van-tag plain  color="#f05555" type="primary">武东路校区</van-tag>
+                    </view>
+                    <view slot="footer" class="footer_class">
+                        <van-button plain size="small" color="#F05555">帮助ta</van-button>
+                    </view>
+                </van-card>
+                </view>
+                <view class="card_class">
+                    <van-card class="custom_class" price="10.00" thumb="{{ imageURL }}">
+                    <view slot="title">
+                        <van-tag type="success">不急</van-tag>
+                        <text class="title_class">去信息学院盖一个章！</text>
+                    </view>
+                    <view slot="desc" class="desc_class">
+                        <view class="desc_text_class">详细描述：我已经毕业，某份文件需要辅导员盖章，暂时无法返回学校，希望有人帮我打印文件并到信息学院找老师盖章</view>
+                        <van-tag plain color="#f05555" type="primary">武东路校区</van-tag>
+                    </view>
+                    <view slot="footer" class="footer_class">
+                        <van-button plain size="small" color="#F05555">帮助ta</van-button>
+                    </view>
+                </van-card>
+                </view>
+                <view class="card_class">
+                    <van-card class="custom_class" price="10.00" thumb="{{ imageURL }}">
+                    <view slot="title">
+                        <van-tag type="warning">尽快</van-tag>
+                        <text class="title_class">去信息学院盖一个章！</text>
+                    </view>
+                    <view slot="desc" class="desc_class">
+                        <view class="desc_text_class">详细描述：我已经毕业，某份文件需要辅导员盖章，暂时无法返回学校，希望有人帮我打印文件并到信息学院找老师盖章</view>
+                        <van-tag plain  color="#f05555" type="primary">武东路校区</van-tag>
+                    </view>
+                    <view slot="footer" class="footer_class">
+                        <van-button plain size="small" color="#F05555">帮助ta</van-button>
+                    </view>
+                </van-card>
+                </view>
+                <view class="card_class">
+                    <van-card class="custom_class" price="10.00" thumb="{{ imageURL }}">
+                    <view slot="title">
+                        <van-tag type="warning">尽快</van-tag>
+                        <text class="title_class">去信息学院盖一个章！</text>
+                    </view>
+                    <view slot="desc" class="desc_class">
+                        <view class="desc_text_class">详细描述：我已经毕业，某份文件需要辅导员盖章，暂时无法返回学校，希望有人帮我打印文件并到信息学院找老师盖章</view>
+                        <van-tag plain  color="#f05555" type="primary">武东路校区</van-tag>
+                    </view>
+                    <view slot="footer" class="footer_class">
+                        <van-button plain size="small" color="#F05555">帮助ta</van-button>
+                    </view>
+                </van-card>
+                </view>
+                <view class="card_class">
+                    <van-card class="custom_class" price="10.00" thumb="{{ imageURL }}">
+                    <view slot="title">
+                        <van-tag type="warning">尽快</van-tag>
+                        <text class="title_class">去信息学院盖一个章！</text>
+                    </view>
+                    <view slot="desc" class="desc_class">
+                        <view class="desc_text_class">详细描述：我已经毕业，某份文件需要辅导员盖章，暂时无法返回学校，希望有人帮我打印文件并到信息学院找老师盖章</view>
+                        <van-tag plain  color="#f05555" type="primary">武东路校区</van-tag>
+                    </view>
+                    <view slot="footer" class="footer_class">
+                        <van-button plain size="small" color="#F05555">帮助ta</van-button>
+                    </view>
+                </van-card>
+                </view>
+                <view class="card_class">
+                    <van-card class="custom_class" price="10.00" thumb="{{ imageURL }}">
+                    <view slot="title">
+                        <van-tag type="warning">尽快</van-tag>
+                        <text class="title_class">去信息学院盖一个章！</text>
+                    </view>
+                    <view slot="desc" class="desc_class">
+                        <view class="desc_text_class">详细描述：我已经毕业，某份文件需要辅导员盖章，暂时无法返回学校，希望有人帮我打印文件并到信息学院找老师盖章</view>
+                        <van-tag plain  color="#f05555" type="primary">武东路校区</van-tag>
+                    </view>
+                    <view slot="footer" class="footer_class">
+                        <van-button plain size="small" color="#F05555">帮助ta</van-button>
+                    </view>
+                </van-card>
+                </view>
+                <view class="card_class">
+                    <van-card class="custom_class" price="10.00" thumb="{{ imageURL }}">
+                    <view slot="title">
+                        <van-tag type="warning">尽快</van-tag>
+                        <text class="title_class">去信息学院盖一个章！</text>
+                    </view>
+                    <view slot="desc" class="desc_class">
+                        <view class="desc_text_class">详细描述：我已经毕业，某份文件需要辅导员盖章，暂时无法返回学校，希望有人帮我打印文件并到信息学院找老师盖章</view>
+                        <van-tag plain  color="#f05555" type="primary">武东路校区</van-tag>
+                    </view>
+                    <view slot="footer" class="footer_class">
+                        <van-button plain size="small" color="#F05555">帮助ta</van-button>
+                    </view>
+                </van-card>
+                </view>
+            </scroll-view>
+        </van-tab>
+
+
+        <van-tab title="求咨询">内容 3</van-tab>
+        <van-tab title="求代劳">内容 4</van-tab>
+    </van-tabs>
+</view>

@@ -1,0 +1,219 @@
+<view class="help_class">
+
+<van-tabs active="{{ active }}" bind:change="onChange">
+    <van-tab title="闲置书交易">
+        <van-search placeholder="请输入搜索关键词" />
+        <scroll-view scroll-y="true" refresher-enabled="true" class="content_class" style='height:{{scroll_height}}rpx'>
+
+            <view class="card_class">
+                <van-card class="custom_class" origin-price="40.00" price="10.00" lazy-load="true" thumb-mode="aspectFill" thumb="/images/books/1.jpg" tag="九成新">
+                <view slot="title">
+                    <text class="title_class">出二手书，现代大学英语2</text>
+                </view>
+                <view slot="desc" class="desc_class">
+                    <text class="desc_text_class">书本描述：《现代大学英语》第二版，总主编：杨立民，新旧程度：九成新</text>
+                </view>
+                <view slot="footer" class="footer_class">
+                    <van-button plain size="small" color="#F05555" class="text">Buy it</van-button>
+                </view>
+            </van-card>
+            </view>
+            <view class="card_class">
+                <van-card class="custom_class" origin-price="60.00" price="30.00" lazy-load="true" thumb-mode="aspectFill" thumb="/images/books/2.jpg" tag="全新">
+                <view slot="title">
+                    <text class="title_class">出新书，投资学</text>
+                </view>
+                <view slot="desc" class="desc_class">
+                    <text class="desc_text_class">书本描述：《投资学》原书第十版，投资学课程用书，新旧程度：全新</text>
+                </view>
+                <view slot="footer" class="footer_class">
+                    <van-button plain size="small" color="#F05555" class="text">Buy it</van-button>
+                </view>
+            </van-card>
+            </view>
+            <view class="card_class">
+                <van-card class="custom_class"  origin-price="50.00" price="15.00" lazy-load="true" thumb-mode="aspectFill" thumb="https://img1.baidu.com/it/u=2695475325,2063179039&fm=253&fmt=auto&app=138&f=JPEG?w=450&h=450" tag="八成新">
+                <view slot="title">
+                    <text class="title_class">出二手书，会计学</text>
+                </view>
+                <view slot="desc" class="desc_class">
+                    <text class="desc_text_class">书本描述：《会计学》上海财经大学出版社第五版，主编：陈信元，新旧程度：八成新</text>
+                </view>
+                <view slot="footer" class="footer_class">
+                    <van-button plain size="small" color="#F05555" class="text">Buy it</van-button>
+                </view>
+            </van-card>
+            </view>
+            <view class="card_class">
+                <van-card class="custom_class" origin-price="70.00" price="20.00" lazy-load="true" thumb-mode="aspectFill" thumb="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.duozhuayu.com%2F8aed343879c711e782b500163e04f327.jpeg%3Fx-oss-process%3Dimage%2Fresize%2Cw_450%2Fquality%2CQ_80&refer=http%3A%2F%2Fimg.duozhuayu.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1648569862&t=bbc3b0746929ae31de3f016bba7063fc" tag="八成新">
+                <view slot="title">
+                    <text class="title_class">出二手书，宏观经济学曼昆第十版</text>
+                </view>
+                <view slot="desc" class="desc_class">
+                    <text class="desc_text_class">书本描述：《宏观经济学》中国人民大学出版社曼昆，第十版，中级宏观经济学课程用书，新旧程度：八成新</text>
+                </view>
+                <view slot="footer" class="footer_class">
+                    <van-button plain size="small" color="#F05555" class="text">Buy it</van-button>
+                </view>
+            </van-card>
+            </view>
+            <view class="card_class">
+                <van-card class="custom_class" price="10.00" lazy-load="true" thumb-mode="aspectFill" thumb="/images/example.jpg" tag="九成新">
+                <view slot="title">
+                    <text class="title_class">出二手书，高数财会中微大英近纲等</text>
+                </view>
+                <view slot="desc" class="desc_class">
+                    <text class="desc_text_class">书本描述：全部三折</text>
+                </view>
+                <view slot="footer" class="footer_class">
+                    <van-button plain size="small" color="#F05555">需要ta</van-button>
+                </view>
+            </van-card>
+            </view>
+            <view class="card_class">
+                <van-card class="custom_class" price="10.00" lazy-load="true" thumb-mode="aspectFill" thumb="/images/example.jpg" tag="九成新">
+                <view slot="title">
+                    <text class="title_class">出二手书，高数财会中微大英近纲等</text>
+                </view>
+                <view slot="desc" class="desc_class">
+                    <text class="desc_text_class">书本描述：全部三折</text>
+                </view>
+                <view slot="footer" class="footer_class">
+                    <van-button plain size="small" color="#F05555">需要ta</van-button>
+                </view>
+            </van-card>
+            </view>
+            <view class="card_class">
+                <van-card class="custom_class" price="10.00" lazy-load="true" thumb-mode="aspectFill" thumb="/images/example.jpg" tag="九成新">
+                <view slot="title">
+                    <text class="title_class">出二手书，高数财会中微大英近纲等</text>
+                </view>
+                <view slot="desc" class="desc_class">
+                    <text class="desc_text_class">书本描述：全部三折</text>
+                </view>
+                <view slot="footer" class="footer_class">
+                    <van-button plain size="small" color="#F05555">需要ta</van-button>
+                </view>
+            </van-card>
+            </view>
+            <view class="card_class">
+                <van-card class="custom_class" price="10.00" lazy-load="true" thumb-mode="aspectFill" thumb="/images/example.jpg" tag="九成新">
+                <view slot="title">
+                    <text class="title_class">出二手书，高数财会中微大英近纲等</text>
+                </view>
+                <view slot="desc" class="desc_class">
+                    <text class="desc_text_class">书本描述：全部三折</text>
+                </view>
+                <view slot="footer" class="footer_class">
+                    <van-button plain size="small" color="#F05555">需要ta</van-button>
+                </view>
+            </van-card>
+            </view>
+            
+            
+            
+        </scroll-view>
+    </van-tab>
+
+    <van-tab title="闲置物品交易">
+        <van-search placeholder="请输入搜索关键词" />
+        <van-dropdown-menu active-color="#F05555">
+            <van-dropdown-item value="{{ value3 }}" options="{{ option3 }}" />
+        </van-dropdown-menu>
+        <scroll-view scroll-y="true" refresher-enabled="true" class="content_class" style='height:{{scroll_height}}rpx'>
+            <view class="card_class">
+                <van-card class="custom_class" price="500.00" origin-price="700.00" lazy-load="true" thumb-mode="aspectFill" thumb="//ci.xiaohongshu.com/24ff822d-4bb8-4f82-a9de-bc37e418b482?imageView2/2/w/1080/format/jpg" tag="全新">
+                <view slot="title">
+                    <text class="title_class">出售闲置的几瓶SK2</text>
+                </view>
+                <view slot="desc" class="desc_class">
+                    <text class="desc_text_class">物品描述：闲置的几瓶SK2，白色那罐溶油特别好用，去黑头神马，对我而言简直就是神器o(^▽^)</text>
+                </view>
+                <view slot="footer" class="footer_class">
+                    <van-button plain size="small" color="#F05555" class="text">Buy it</van-button>
+                </view>
+            </van-card>
+            </view>
+            <view class="card_class">
+                <van-card class="custom_class" price="55.00" lazy-load="true" thumb-mode="aspectFill" thumb="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fci.xiaohongshu.com%2F6b1e6cc0-609e-d83f-cc78-6be025582d85%3FimageView2%2F2%2Fw%2F1080%2Fformat%2Fjpg&refer=http%3A%2F%2Fci.xiaohongshu.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1648571700&t=38c8423a08cd16806925ce41f32a619a" tag="九成新">
+                <view slot="title">
+                    <text class="title_class">出闲置，宜家桌底置物架</text>
+                </view>
+                <view slot="desc" class="desc_class">
+                    <text class="desc_text_class">物品描述：宜家桌底置物架，30cm*56cm，九成新，宿舍桌下必备</text>
+                </view>
+                <view slot="footer" class="footer_class">
+                    <van-button plain size="small" color="#F05555" class="text">Buy it</van-button>
+                </view>
+            </van-card>
+            </view>
+            <view class="card_class">
+                <van-card class="custom_class" price="1288.00" origin-price="2000.00" lazy-load="true" thumb-mode="aspectFill" thumb="https://img0.baidu.com/it/u=2759276579,3766671272&fm=253&fmt=auto&app=138&f=JPEG?w=450&h=550" tag="九成新">
+                <view slot="title">
+                    <text class="title_class">出小电驴，价格可刀，校园必备</text>
+                </view>
+                <view slot="desc" class="desc_class">
+                    <text class="desc_text_class">物品描述：九成新小电驴，使用不满一年，价格可刀</text>
+                </view>
+                <view slot="footer" class="footer_class">
+                    <van-button plain size="small" color="#F05555" class="text">Buy it</van-button>
+                </view>
+            </van-card>
+            </view>
+            <view class="card_class">
+                <van-card class="custom_class" price="78.00" origin-price="118.00" lazy-load="true" thumb-mode="aspectFill" thumb="https://img0.baidu.com/it/u=476140605,1533931131&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=620" tag="九五成新">
+                <view slot="title">
+                    <text class="title_class">转手冬奥限量冰墩墩</text>
+                </view>
+                <view slot="desc" class="desc_class">
+                    <text class="desc_text_class">物品描述：2022年北京冬奥会网红吉祥物手办冰墩墩，转手卖！</text>
+                </view>
+                <view slot="footer" class="footer_class">
+                    <van-button plain size="small" color="#F05555" class="text">Buy it</van-button>
+                </view>
+            </van-card>
+            </view>
+            <view class="card_class">
+                <van-card class="custom_class" price="10.00" lazy-load="true" thumb-mode="aspectFill" thumb="/images/example.jpg" tag="九成新">
+                <view slot="title">
+                    <text class="title_class">出二手书，高数财会中微大英近纲等</text>
+                </view>
+                <view slot="desc" class="desc_class">
+                    <text class="desc_text_class">书本描述：全部三折</text>
+                </view>
+                <view slot="footer" class="footer_class">
+                    <van-button plain size="small" color="#F05555">需要ta</van-button>
+                </view>
+            </van-card>
+            </view>
+            <view class="card_class">
+                <van-card class="custom_class" price="10.00" lazy-load="true" thumb-mode="aspectFill" thumb="/images/example.jpg" tag="九成新">
+                <view slot="title">
+                    <text class="title_class">出二手书，高数财会中微大英近纲等</text>
+                </view>
+                <view slot="desc" class="desc_class">
+                    <text class="desc_text_class">书本描述：全部三折</text>
+                </view>
+                <view slot="footer" class="footer_class">
+                    <van-button plain size="small" color="#F05555">需要ta</van-button>
+                </view>
+            </van-card>
+            </view>
+            <view class="card_class">
+                <van-card class="custom_class" price="10.00" lazy-load="true" thumb-mode="aspectFill" thumb="/images/example.jpg" tag="九成新">
+                <view slot="title">
+                    <text class="title_class">出二手书，高数财会中微大英近纲等</text>
+                </view>
+                <view slot="desc" class="desc_class">
+                    <text class="desc_text_class">书本描述：全部三折</text>
+                </view>
+                <view slot="footer" class="footer_class">
+                    <van-button plain size="small" color="#F05555">需要ta</van-button>
+                </view>
+            </van-card>
+            </view>
+        </scroll-view>
+    </van-tab>
+
+</van-tabs>
+</view>
